@@ -1,0 +1,4 @@
+[project]
+name="mytool"
+[project.scripts]
+mytool="pkg.nosuch:main"
