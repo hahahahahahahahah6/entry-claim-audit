@@ -1,0 +1,1 @@
+Run `mytool --help`.
