@@ -14,7 +14,7 @@ entry-claim-audit . --fail-on HIGH
 entry-claim-audit . --ignore script-undocumented,script-target-not-callable
 entry-claim-audit . --verbose
 entry-claim-audit --version
-python -m entry_claim_audit .
+python3 -m entry_claim_audit .
 ```
 
 The path defaults to `.`. Exit codes: 0 PASS, 2 FAIL, 1 usage/input error. Default failure threshold is MEDIUM; `--fail-on HIGH` still prints MEDIUM findings but does not fail for them. `--ignore RULE,...` drops those rules entirely, for example when scripts are documented elsewhere or a data-object target is intentional. `--verbose` adds verified scripts to human output.
